@@ -24,7 +24,8 @@ RUN echo "mysqld_safe & " \
     "mysql -e 'GRANT ALL PRIVILEGES ON *.* TO \"root\"@\"%\" WITH GRANT OPTION;'" \
     | bash -e
 
-VOLUME ["/etc/mysql", "/var/lib/mysql"]
+# ??? exposting these directories overrides fig declarations
+# VOLUME ["/etc/mysql", "/var/lib/mysql"]
 
 EXPOSE 3306
 
