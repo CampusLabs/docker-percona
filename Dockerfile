@@ -2,7 +2,7 @@ FROM orgsync/base
 MAINTAINER Clifton King <cliftonk@gmail.com>
 
 ENV MYSQL_VERSION 5.6
-ENV PERCONA_SERVER_VERSION 5.6.21-69.0-675.wheezy
+ENV PERCONA_SERVER_VERSION 5.6.22-71.0-726.wheezy
 
 RUN apt-key adv --keyserver keys.gnupg.net --recv-keys 1C4CBDCDCD2EFD2A \
     && echo "deb http://repo.percona.com/apt wheezy main" \
